@@ -1,0 +1,25 @@
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+	<div class="person" itemscope itemtype="http://schema.org/Person">
+		<p class="name" itemprop="name"><?php print $this->firstname; ?> <?php print $this->lastname; ?></p>
+		<?php if ($this->function) { ?>
+			<p class="function" itemprop="jobTitle"><?php print $this->function; ?></p>
+		<?php } ?>
+		<?php if ($this->image) { ?>
+			<figure itemprop="image">
+				<img src="<?php print $this->image; ?>" <?php print $this->imageSize; ?> alt="<?php print $this->firstname; ?> <?php print $this->lastname; ?>" />
+			</figure>
+		<?php } ?>
+		<?php if ($this->email) { ?>
+			<p class="email" itemprop="email"><?= $this->email; ?></p>
+		<?php } ?>
+		<?php if ($this->position) { ?>
+			<p class="position">Position: <?= $this->position; ?></p>
+		<?php } ?>
+		<?php if ($this->size) { ?>
+			<p class="size">Größe: <?= $this->size; ?> cm</p>
+		<?php } ?>
+		<?php if ($this->dateOfBirth) { ?>
+			<p class="dateOfBirth">Alter: <?= date_diff(date_create("@$this->dateOfBirth"), date_create('now'))->y; ?></p>
+		<?php } ?>
+	</div>
+</div>
