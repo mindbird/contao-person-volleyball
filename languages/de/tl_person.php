@@ -17,7 +17,7 @@
 $GLOBALS['TL_LANG']['tl_person']['dateOfBirth'] = array('Geburtstag', '');
 $GLOBALS['TL_LANG']['tl_person']['size'] = array('Größe', 'Bitte die Größe in cm eintragen.');
 $GLOBALS['TL_LANG']['tl_person']['position'] = array('Position', '');
-
+$GLOBALS['TL_LANG']['tl_person']['moreInformation'] = array('Weitere Informationen', '');
 
 /**
  * Legends

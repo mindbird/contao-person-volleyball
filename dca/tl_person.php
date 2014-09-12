@@ -39,6 +39,18 @@ $GLOBALS ['TL_DCA'] ['tl_person'] ['fields'] ['position'] = array(
 		'sql' => "varchar(255) NOT NULL default ''" 
 );
 
+$GLOBALS ['TL_DCA'] ['tl_person'] ['fields'] ['moreInformation'] = array(
+		'label' => &$GLOBALS ['TL_LANG'] ['tl_person'] ['moreInformation'],
+		'exclude' => true,
+		'search' => true,
+		'inputType' => 'text',
+		'eval' => array (
+				'tl_class' => 'clr',
+				'rte' => 'tinyMCE'
+		),
+		'sql' => "text NULL"
+);
+
 $GLOBALS ['TL_DCA'] ['tl_person'] ['palettes'] ['default'] .= ';{volleyball_legend},dateOfBirth,size,position;';
 
 ?>

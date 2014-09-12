@@ -16,6 +16,6 @@
  */
 TemplateLoader::addFiles(array
 (
-	'person_volleyball_list' => 'system/modules/Person-Volleyball/templates',
-	'ce_person_volleyball' => 'system/modules/Person-Volleyball/templates'
+	'person_volleyball_list' => 'system/modules/Personen-Volleyball/templates',
+	'ce_person_volleyball' => 'system/modules/Personen-Volleyball/templates'
 ));
